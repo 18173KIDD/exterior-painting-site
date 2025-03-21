@@ -1,0 +1,437 @@
+/* リセットCSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ヘッダースタイル */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    max-width: 220px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.phone {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.phone img {
+    width: 24px;
+    margin-right: 5px;
+}
+
+.hours {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.contact-btn {
+    background-color: #fff;
+    color: #E67A00;
+    border: 1px solid #E67A00;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #E67A00;
+    color: #fff;
+}
+
+/* ナビゲーション */
+nav {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0 5%;
+}
+
+nav ul li {
+    padding: 15px 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #E67A00;
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #E67A00;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+/* メインビジュアル */
+.hero {
+    background-color: #FFF8E8;
+    padding: 50px 5%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.stats {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.stat-item {
+    margin-right: 40px;
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.stat-number span {
+    color: #E67A00;
+}
+
+.house-container {
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.house-image {
+    width: 100%;
+    max-width: 400px;
+    transition: filter 0.3s ease;
+}
+
+.color-selector {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.color-selector h3 {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.colors {
+    display: flex;
+    justify-content: center;
+}
+
+.color-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin: 0 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.color-btn:hover {
+    transform: scale(1.1);
+}
+
+/* バッジスタイル */
+.badges {
+    display: flex;
+    margin-top: 40px;
+}
+
+.badge {
+    background-color: #FFD54F;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.badge span {
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.badge strong {
+    color: #E67A00;
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+/* 見積りフォーム */
+.estimate-section {
+    padding: 50px 5%;
+    background-color: #fff;
+    display: flex;
+}
+
+.estimate-intro {
+    width: 30%;
+    padding-right: 30px;
+}
+
+.estimate-intro h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.estimate-intro h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    color: #E67A00;
+}
+
+.amazon-gift {
+    display: flex;
+    align-items: center;
+}
+
+.amazon-gift img {
+    width: 80px;
+    margin-right: 10px;
+}
+
+.amazon-gift p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.amazon-gift strong {
+    font-size: 24px;
+    color: #E67A00;
+}
+
+.estimate-form {
+    width: 70%;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.form-row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 50%;
+    padding: 0 10px;
+}
+
+.form-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.required {
+    background-color: #FF6B6B;
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.optional {
+    background-color: #6B7280;
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+select, input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select:focus, input:focus {
+    outline: none;
+    border-color: #E67A00;
+}
+
+.form-note {
+    font-size: 11px;
+    color: #666;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+.submit-btn {
+    background-color: #E67A00;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 0;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #d86a00;
+}
+
+/* フッター */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.copyright p {
+    margin-bottom: 5px;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .hero-content, .house-container {
+        width: 100%;
+    }
+    
+    .hero-content {
+        margin-bottom: 40px;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .badges {
+        justify-content: center;
+    }
+    
+    .estimate-section {
+        flex-direction: column;
+    }
+    
+    .estimate-intro, .estimate-form {
+        width: 100%;
+    }
+    
+    .estimate-intro {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .amazon-gift {
+        justify-content: center;
+    }
+    
+    .form-row {
+        flex-direction: column;
+    }
+    
+    .form-group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+    }
+    
+    nav ul li {
+        padding: 10px 15px;
+    }
+}
