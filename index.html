@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外壁塗装の窓口 | 業界最大級の外壁塗装専門サイト</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ヘッダー部分 -->
+    <header>
+        <div class="logo">
+            <h1 style="font-size: 24px; color: #E67A00;">外壁塗装の窓口</h1>
+        </div>
+        <div class="contact-info">
+            <div class="phone">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#E67A00">
+                    <path d="M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 18H5c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1h14c.55 0 1 .45 1 1v14c0 .55-.45 1-1 1zM8 9h8v2H8zm0 3h8v2H8zm0 3h8v2H8z"/>
+                </svg>
+                0120-945-990
+            </div>
+            <p class="hours">24時間受付中（年中無休）</p>
+            <a href="#contact" class="contact-btn">お問い合わせ</a>
+        </div>
+    </header>
+    
+    <!-- ナビゲーション -->
+    <nav>
+        <ul>
+            <li><a href="#store-list">施工店一覧</a></li>
+            <li><a href="#column">外壁塗装コラム</a></li>
+            <li><a href="#subsidy">外壁塗装助成金</a></li>
+            <li><a href="#price">外壁塗装相場</a></li>
+            <li><a href="#franchise">加盟店募集</a></li>
+        </ul>
+    </nav>
+    
+    <!-- メインビジュアル -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="stats">
+                <div class="stat-item">
+                    <div>累計利用者数</div>
+                    <div class="stat-number"><span>60</span>万人</div>
+                </div>
+                <div class="stat-item">
+                    <div>登録施工店</div>
+                    <div class="stat-number"><span>5,000</span>社以上</div>
+                </div>
+            </div>
+            
+            <h1>おうちの塗装は<br>もう悩まない。</h1>
+            
+            <div class="badges">
+                <div class="badge">
+                    <span>施工相場がわかる</span>
+                    <strong>No.1</strong>
+                    <span>外壁塗装無料相場サイト</span>
+                </div>
+                <div class="badge">
+                    <span>優良施工店と出会える</span>
+                    <strong>No.1</strong>
+                    <span>外壁塗装無料相談サイト</span>
+                </div>
+                <div class="badge">
+                    <span>担当者が丁寧できる</span>
+                    <strong>No.1</strong>
+                    <span>外壁塗装無料相談サイト</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="house-container">
+            <svg width="400" height="300" viewBox="0 0 400 300" class="house-image">
+                <path d="M200 50 L50 200 L350 200 Z" fill="#FFB74D"/> <!-- 屋根 -->
+                <rect x="75" y="200" width="250" height="150" fill="#FFB74D"/> <!-- 家の本体 -->
+                <rect x="150" y="250" width="60" height="100" fill="#fff"/> <!-- ドア -->
+                <rect x="250" y="230" width="40" height="40" fill="#fff"/> <!-- 窓 -->
+            </svg>
+            <div class="color-selector">
+                <h3>Select Color</h3>
+                <div class="colors">
+                    <button class="color-btn" style="background-color: #FFB74D;" onclick="changeHouseColor('#FFB74D')"></button>
+                    <button class="color-btn" style="background-color: #FFD54F;" onclick="changeHouseColor('#FFD54F')"></button>
+                    <button class="color-btn" style="background-color: #81D4FA;" onclick="changeHouseColor('#81D4FA')"></button>
+                    <button class="color-btn" style="background-color: #4DB6AC;" onclick="changeHouseColor('#4DB6AC')"></button>
+                    <button class="color-btn" style="background-color: #7986CB;" onclick="changeHouseColor('#7986CB')"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 見積りフォーム -->
+    <section class="estimate-section">
+        <div class="estimate-intro">
+            <h2>\ 簡単10秒相場CHECK! /</h2>
+            <h3>外壁塗装の<br>相場を診断</h3>
+            <div class="amazon-gift">
+                <div style="width: 80px; height: 50px; background: #232F3E; color: white; display: flex; align-items: center; justify-content: center; border-radius: 4px; font-size: 12px;">
+                    Amazon<br>ギフト券
+                </div>
+                <p>相場診断でAmazonギフト券<br><strong>1000</strong>円分</p>
+            </div>
+        </div>
+        
+        <div class="estimate-form">
+            <form action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="form-label">
+                            都道府県
+                            <span class="required">必須</span>
+                        </div>
+                        <select name="prefecture" required>
+                            <option value="">選択してください</option>
+                            <option value="tokyo">東京都</option>
+                            <option value="osaka">大阪府</option>
+                            <!-- 他の都道府県 -->
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="form-label">
+                            延床面積
+                            <span class="required">必須</span>
+                        </div>
+                        <select name="area" required>
+                            <option value="">選択してください</option>
+                            <option value="under100">〜100㎡</option>
+                            <option value="100-150">100〜150㎡</option>
+                            <!-- 他の選択肢 -->
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="form-label">
+                            現在の状況
+                            <span class="required">必須</span>
+                        </div>
+                        <select name="situation" required>
+                            <option value="">選択してください</option>
+                            <option value="research">情報収集中</option>
+                            <option value="compare">複数の業者を比較中</option>
+                            <!-- 他の選択肢 -->
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="form-label">
+                            工事箇所
+                            <span class="required">必須</span>
+                        </div>
+                        <select name="location" required>
+                            <option value="">選択してください</option>
+                            <option value="outer-wall">外壁</option>
+                            <option value="roof">屋根</option>
+                            <!-- 他の選択肢 -->
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="form-label">
+                            携帯電話番号
+                            <span class="required">必須</span>
+                        </div>
+                        <input type="tel" name="phone" placeholder="例: 08012345678" required>
+                        <p class="form-note">※こちらの携帯電話番号にSMSメール形式での見積価格と<br>お得なクーポンをお送りしますのでご相場表示のためにご入力ください。</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="form-label">
+                            メールアドレス
+                            <span class="optional">任意</span>
+                        </div>
+                        <input type="email" name="email" placeholder="例: example@example.com">
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-btn">今すぐ相場を調べる</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- フッター -->
+    <footer>
+        <div class="footer-links">
+            <a href="#about">会社概要</a>
+            <a href="#terms">利用規約</a>
+            <a href="#privacy">プライバシーポリシー</a>
+            <a href="#contact">お問い合わせ</a>
+        </div>
+        <div class="copyright">
+            <p>日本マーケティングリサーチ機構調べ 調査概要：2021年1月期ブランドのイメージ調査</p>
+            <p>© 2025 外壁塗装の窓口 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScriptを追加（色変更機能用） -->
+    <script>
+        function changeHouseColor(color) {
+            // SVG要素内の塗りつぶし色を変更
+            const houseParts = document.querySelectorAll('.house-image path, .house-image rect:not([fill="white"])');
+            houseParts.forEach(part => {
+                part.setAttribute('fill', color);
+            });
+        }
+    </script>
+</body>
+</html>
